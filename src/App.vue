@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <at :members="members" name-key="name" v-model="html">
+    <at :members="members" :ats="['{']" name-key="name" v-model="html">
       <!-- custom: same as default slot -->
       <!-- <template v-slot:item="s">
         <span v-text="s.item"></span>

@@ -468,10 +468,9 @@ export default {
         const html = this.$refs.embeddedItem.firstChild.innerHTML
         this.insertHtml(html, r);
       } else {
-        const t = itemName(curItem) + suffix
+        let t = itemName(curItem) + '}' + suffix
         this.insertText(t, r);
       }
-
       this.$emit('insert', curItem)
       this.handleInput()
     },
